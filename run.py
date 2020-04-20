@@ -32,10 +32,7 @@ def save_cred(credential):
     Function to save user credentials
     """
     credential.save_credential()
-def verify_user(first_name,password):
-    checking_user = Credential.check_user(first_name,password)
-    return checking_user
-    
+
 
 def del_user(user):
     """
@@ -160,7 +157,7 @@ def main():
             password = str(input('Enter your password - '))
             user_exists = verify_user(user_name,password)
             if user_exists == user_name:
-                print("welcome")
+                print("")
 
 			      
         elif short_code == "ex":
