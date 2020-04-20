@@ -67,11 +67,11 @@ def main():
     print("Welcome to your Password Locker, choose your path from the list of allowed actions")
 
     while True:
-        print("Allowed Actions: \n ad - create a new user account with a user-defined password\n ag - create a new user account with a auto-generated password\n da - display all user accounts \n ex -exit the contact list \n")
+        print("Allowed Actions: \n 1 - create a new user account with a user-defined password\n 2 - create a new user account with a auto-generated password\n 3 - display all user accounts \n 4 - Login \n ex -exit the contact list \n")
 
         short_code = input().lower()
 
-        if short_code == 'ad':
+        if short_code == '1':
             print("New User")
             print("-"*10)
             print("Hey There!!! What site do you want to create an account for?")
@@ -103,7 +103,7 @@ def main():
             print(f" The username is {user_name} and the password is {pword}")
             print('\n')
 
-        elif short_code == 'ag':
+        elif short_code == '2':
             print("New User")
             print("-" * 10)
             print("Hey There!!! What site do you want to create an account for?")
@@ -135,7 +135,7 @@ def main():
             print(f" The username is {user_name} and the password is {pword}")
             print('\n')
 
-        elif short_code == 'da':
+        elif short_code == '3':
 
             if display_user():
                 print("Here is a list of all your user accounts")
@@ -149,7 +149,11 @@ def main():
                 print('\n')
                 print("You don't seem to have any existing accounts")
                 print('\n')
-
+        elif short_code == '4':
+            print("-"*60) 
+            print(' ')
+            print('To login, enter your account details:')
+			      
         elif short_code == "ex":
             print(":/ See you soon then...")
             break
