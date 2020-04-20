@@ -153,6 +153,8 @@ def main():
             print("-"*60) 
             print(' ')
             print('To login, enter your account details:')
+            user_name = input('Enter your first name - ').strip()
+            password = str(input('Enter your password - '))
 			      
         elif short_code == "ex":
             print(":/ See you soon then...")
