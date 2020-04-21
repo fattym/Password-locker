@@ -25,6 +25,10 @@ def save_user(user):
     Function to save user
     """
     user.save_user_details()
+def verify_user(first_name,pword):
+    checking_user = Credential.check_user(first_name,pword)
+    return checking_user
+
 
 
 def save_cred(credential):
@@ -67,7 +71,7 @@ def main():
     print("Welcome to your Password Locker, choose your path from the list of allowed actions")
 
     while True:
-        print("Allowed Actions: \n 1 - create a new user account with a user-defined password\n 2 - create a new user account with a auto-generated password\n 3 - display all user accounts \n 4 - Login \n ex -exit the contact list \n")
+        print("Allowed Actions: \n 1 - create a new user account with a Personal password\n 2 - create a new user account with a auto-generated password\n 3 - Display all user accounts \n 4 - Login  to an existing Account\n ex -exit the contact list \n")
 
         short_code = input().lower()
 
@@ -154,11 +158,20 @@ def main():
             print(' ')
             print('To login, enter your account details:')
             user_name = input('Enter your first name - ').strip()
-            password = str(input('Enter your password - '))
-            user_exists = verify_user(user_name,password)
+            pword = str(input('Enter your password - '))
+            user_exists = verify_user(user_name,pword)
             if user_exists == user_name:
                 print("")
-
+                print(f'Welcome {user_name}. Please choose an option to continue.')
+                
+                print(' ')
+                while True:
+                    print("-"*60)
+                    for user in display_user():
+                        print(f"{user.first_name} {user.last_name} has an account for {site}")
+                    
+                else: 
+                    print('Oops! Wrong details entered. Try again or Create an Account.')     
 			      
         elif short_code == "ex":
             print(":/ See you soon then...")
