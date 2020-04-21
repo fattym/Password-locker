@@ -42,7 +42,6 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 | Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
 | Display prompt for creating a credential | **Enter: 3** | Enter the site name, your username and password |
 | Display a list of credentials | **Enter: 4** | Prints a list of saved credentials |
-| Display prompt for which credential to copy | **Enter: copy** | Enter the site name of the credential you wish to copy. |
 | Exit application | **Enter: ex** | Exit the current navigation stage |
 
 ## Technologies Used
