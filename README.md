@@ -37,12 +37,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display codes for navigation | **In terminal: $./run.py** | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
-| Display prompt for creating an account | **Enter: ca** | Enter your first name, last name and password |
-| Display prompt for login in | **Enter: li** | Enter your account name and password |
+| Display prompt for creating an account | **Enter: 1** | Enter your first name, last name and password |
+| Display prompt for login in | **Enter: 2** | Enter your account name and password |
 | Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
-| Display prompt for creating a credential | **Enter: cc** | Enter the site name, your username and password |
-| Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
-| Display prompt for which credential to copy | **Enter: copy** | Enter the site name of the credential you wish to copy. |
+| Display prompt for creating a credential | **Enter: 3** | Enter the site name, your username and password |
+| Display a list of credentials | **Enter: 4** | Prints a list of saved credentials |
 | Exit application | **Enter: ex** | Exit the current navigation stage |
 
 ## Technologies Used
